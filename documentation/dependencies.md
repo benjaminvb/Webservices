@@ -40,12 +40,14 @@ Universal dynamic module loader
 Zones for JavaScript
 ***
 ######Instalatie
-al deze dependecies zijn geinstaleerd door ze toe te voegen in package.json gevolt door
+al deze dependecies zijn geinstalleerd door ze toe te voegen in package.json gevolgddoor
 ```
 npm install
 ```
 ***
 ###source
 [https://www.npmjs.com/package](https://www.npmjs.com/package)
+
 [https://docs.angularjs.org/](https://docs.angularjs.org/)
+
 [http://www.w3schools.com/angular](http://www.w3schools.com/angular)
