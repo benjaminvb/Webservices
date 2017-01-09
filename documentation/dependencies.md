@@ -39,7 +39,7 @@ Universal dynamic module loader
 #####zone.js
 Zones for JavaScript
 ***
-######Instalatie
+######Installatie
 al deze dependecies zijn geinstalleerd door ze toe te voegen in package.json gevolgddoor
 ```
 npm install
