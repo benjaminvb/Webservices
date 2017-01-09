@@ -9,7 +9,7 @@
 * mongoose
 
 #####Project opzetten
-npm init maakt een initiele package.json file aan.
+npm init maakt een initiële package.json file aan.
 ```
 npm init
 ```
@@ -24,7 +24,7 @@ web applicatie framework
 ```
 npm install express --save
 ```
-koppling met de database.
+koppeling met de database.
 ```
 npm install mongoose --save
 ```
@@ -35,13 +35,13 @@ csv file inporteren in mongodb:
 ```
 mongoimport -d mydb -c solarlogs --type csv  --file --headerline
 ```
-op de 1ste lijn van de csv staan colom namen
+op de 1ste lijn van de csv staan colom namen.  De separator moet wel degelijk een comma zijn. Bij andere karakters, bvb puntcomma, werkt de import niet.
 source: [stackoverflow.com](http://stackoverflow.com/questions/4686500/how-to-use-mongoimport-to-import-csv)
 
 #####Mongoose
-Mongoose word gebruikt om te comuniceren met MongoDB
-Standaart word er een v colom toegevoegd in de database, dit is een versie key.
-Het is mogenlijk deze weg te doen door aan het mongoose schema het volegende toe te voegen:
+Mongoose wordt gebruikt om te communiceren met MongoDB.
+Standaard wordt er een __v veld toegevoegd per record in de database, dit is een versie key.
+Het is mogelijk deze weg te doen door aan het mongoose schema het volgende toe te voegen:
 ```
 {versionKey:false}
 ```
@@ -63,8 +63,10 @@ ssl certificaat
 openssl x509 -req -days 365 -in server.csr -signkey key.pem -out cert.pem
 ```
 ***
-voor de andere gebruikte dependeties zie dependencies.md
+voor de andere gebruikte dependecies zie dependencies.md
 
 ######gebruikte tutorials:
 [Angular 2 In 60 Minutes](https://www.youtube.com/watch?v=-zW1zHqsdyc)
+
 [EXPRESS WITH ANGULAR CLI IN 5 MINUTES](https://javascriptrocks.wordpress.com/2016/06/04/express-with-angular-cli-in-5-minutes/)
+
