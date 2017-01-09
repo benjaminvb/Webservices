@@ -33,7 +33,7 @@ sudo service mongod start
 
 ##### Nakijken of MongoDB succesvol gestart is
 log file nakijken: /var/log/mongodb/mongod.log
-Als MongoDB succesvol gestart zal de laatste lijn het vollegende zijn:
+Als MongoDB succesvol gestart zal de laatste lijn het volgende zijn:
 ```
 [initandlisten] waiting for connections on port <port>
 ```
@@ -77,6 +77,6 @@ net:
 ##### Robomongo
 source: [robomongo](https://robomongo.org/)
 Robomongo downloaden via source.
-Standaart instalatie.
+Standaard installatie.
 Nu kan er verbinding gemaakt worden met MongoDB op de server via het ip adres van de server op de poort dat MongoDB luistert.
-Robomongo biet een makkelijkere manier om de database te managen.
+Robomongo biedt een makkelijkere manier om de database te managen.
