@@ -15,7 +15,7 @@ npm init
 ```
 [screenshot npm](https://github.com/benjaminvb/Webservices/blob/master/documentation/screenshots/npm_init.png)  
   
-typescrip installeren
+typescript installeren
 -g is voor het globaal installeren ( = niet in project) omdat dit een tool installeert die niet nodig is om de applicatie te runnen.
 ```
 npm install typescript -g
@@ -70,3 +70,6 @@ voor de andere gebruikte dependecies zie dependencies.md
 
 [EXPRESS WITH ANGULAR CLI IN 5 MINUTES](https://javascriptrocks.wordpress.com/2016/06/04/express-with-angular-cli-in-5-minutes/)
 
+https://github.com/DavideViolante/Angular2-Full-Stack  (stukken code gebruikt voor de koppeling met de database)
+
+[http://commonmark.org/help/](http://commonmark.org/help/)
