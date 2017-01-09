@@ -1,0 +1,39 @@
+{
+  "name": "solarlogs",
+  "version": "1.0.0",
+  "description": "display solarlogs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:benjaminvb/Webservices.git"
+  },
+  "author": "Benjamin Van Balalert",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "~2.4.0",
+    "@angular/compiler": "~2.4.0",
+    "@angular/core": "~2.4.0",
+    "@angular/forms": "~2.4.0",
+    "@angular/http": "~2.4.0",
+    "@angular/platform-browser": "~2.4.0",
+    "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/router": "~3.4.0",
+    "angular-in-memory-web-api": "~0.2.4",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "core-js": "^2.4.1",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.6",
+    "morgan": "^1.7.0",
+    "rxjs": "5.0.1",
+    "serve-favicon": "^2.3.2",
+    "systemjs": "0.19.40",
+    "zone.js": "^0.7.4"
+  },
+  "devDependencies": {
+    "git-push": "^0.1.1"
+  }
+}

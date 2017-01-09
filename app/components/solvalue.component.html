@@ -1,0 +1,61 @@
+<h1>SolarLog</h1>
+<div *ngIf="!isLoading">
+  <h4>Aantal metingen: ({{solvalues.length}})</h4>
+    <div>
+      <div *ngIf="!isEditing">
+       <h4>Add new solvalue</h4>
+       <div>
+         <form [formGroup]="addSolValueForm" (ngSubmit)="addSolValue()">
+	     <div>
+	       <input type="text" name="datum" formControlName="datum" placeholder="Datum">
+	     </div>
+	     <div>
+	       <input type="number" name="waarde" formControlName="waarde" placeholder="Waarde">
+	     </div>
+	     <div>
+	       <input type="number" name="max" formControlName="max" placeholder="Max">
+	     </div>  
+	     <button>Submit</button>  
+         </form>
+       </div>
+     </div>  
+     <table>
+      <tbody *ngIf="solvalues.length === 0">
+        <tr>
+          <td colspan="4">There are no solar values in the DB. Add a new solvalue below.</td>
+        </tr>  
+       </tbody>
+      <tbody *ngIf="!isEditing">
+        <tr *ngFor="let sl of solvalues">
+          <td>{{sl.datum}}</td>
+          <td>{{sl.waarde}}</td>
+          <td>{{sl.max}}</td>
+          <td>
+            <button (click)="enableEditing(sl)"><i></i> Edit</button>
+            <button (click)="deleteSolValue(sl)"><i></i> Delete</button>
+          </td>
+        </tr>  
+      </tbody>
+      
+      <tbody *ngIf="isEditing">
+        <tr>
+          <td colspan="4">
+            <form #form="ngForm" (ngSubmit)="editSolValue(solvalue)" style="display:inline">
+              <div>
+                  <input type="text" name="datum" [(ngModel)]="solvalue.datum" placeholder="datum" required>
+              </div>
+              <div>
+                <input type="number" name="waarde" [(ngModel)]="solvalue.waarde" placeholder="waarde" min="0" required>
+              </div>
+              <div>
+                <input type="number" name="max" [(ngModel)]="solvalue.max" placeholder="max"  min="0" required>
+              </div>
+              <button type="submit" [disabled]="!form.form.valid"><i></i> Save</button>
+            </form>
+            <button (click)="cancelEditing()"><i></i> Cancel</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> 
