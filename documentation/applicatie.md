@@ -13,7 +13,8 @@ npm init maakt een initiele package.json file aan.
 ```
 npm init
 ```
-[screenshot](https://github.com/benjaminvb/Webservices/blob/master/documentation/screenshots/npm_init.png)  
+[screenshot npm](https://github.com/benjaminvb/Webservices/blob/master/documentation/screenshots/npm_init.png)  
+  
 typescrip installeren
 -g is voor het globaal installeren ( = niet in project) omdat dit een tool installeert die niet nodig is om de applicatie te runnen.
 ```
