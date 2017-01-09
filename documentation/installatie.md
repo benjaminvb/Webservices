@@ -1,4 +1,4 @@
-# Instalatie
+# Installatie
 
 ### Debian
 
@@ -93,6 +93,7 @@ snort --version
 snort
 ```
 [screenshot snort run part1](https://github.com/benjaminvb/Webservices/blob/master/documentation/screenshots/snortp1.png)
+
 [screenshot snort run part2](https://github.com/benjaminvb/Webservices/blob/master/documentation/screenshots/snort%20p2.png)
 ***
 
